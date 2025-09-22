@@ -14,6 +14,7 @@ class CameraController {
         
         this.initializeElements();
         this.bindEvents();
+        this.isInverted = false;
     }
 
     initializeElements() {
@@ -29,7 +30,10 @@ class CameraController {
         this.recordingIndicator = document.getElementById('recording-indicator');
         this.focusRing = document.getElementById('focus-ring');
     }
-
+toggleInvert() {
+    this.isInverted = !this.isInverted;
+    this.videoElement.classList.toggle('inverted', this.isInverted);
+}
     bindEvents() {
         this.shutterBtn.addEventListener('click', () => this.handleShutter());
         this.cameraSwitchBtn.addEventListener('click', () => this.switchCamera());
