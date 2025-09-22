@@ -1,16 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pikcam</title>
-    <!-- Pica for high-quality resizing -->
-<script src="https://cdn.jsdelivr.net/npm/pica@8.0.0/dist/pica.min.js"></script>
-<!-- Compressor.js for compression -->
-<script src="https://cdn.jsdelivr.net/npm/compressorjs@1.1.1/dist/compressor.min.js"></script>
-<!-- CamanJS for editing and filters -->
-<script src="https://cdn.jsdelivr.net/npm/caman@4.1.2/dist/caman.full.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -78,11 +71,6 @@
                                 <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/>
                                 <polyline points="21,15 16,10 5,21" stroke="currentColor" stroke-width="2"/>
                             </svg>
-                            <input type="file" id="input-image" accept="image/*">
-<canvas id="preview-canvas"></canvas>
-<button id="resize-btn">Resize</button>
-<button id="compress-btn">Compress</button>
-<button id="edit-btn">Edit (Sharpen)</button>
                         </div>
                     </button>
                     
@@ -146,6 +134,5 @@
     <script src="gallery.js"></script>
     <script src="gestures.js"></script>
     <script src="script.js"></script>
-    <script src="pikcam-image-processing.js"></script>
 </body>
 </html>
