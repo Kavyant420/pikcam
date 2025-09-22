@@ -112,15 +112,46 @@ body {
 
 /* Controls Overlay */
 .controls-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: env(safe-area-inset-top, 44px) 20px env(safe-area-inset-bottom, 34px) 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* give breathing room */
+  padding: env(safe-area-inset-top, 20px) 20px env(safe-area-inset-bottom, 20px) 20px;
+}
+
+.top-controls {
+  display: flex;
+  justify-content: flex-end; /* or space-between if you want icons spread */
+  gap: 15px;
+}
+
+.bottom-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px; /* << raises it up like Galaxy A70 */
+}
+
+.capture {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid #ccc;
+}
+
+.gallery, .flip {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
 }
 
 /* Top Controls */
